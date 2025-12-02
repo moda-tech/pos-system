@@ -32,9 +32,12 @@
 　・売上情報の削除
 
 #### 技術構成
-| 技術構成 | HTML, CSS, JavaScript |
-| バックエンド | Node.js, Express |
-| データベース |  MySQL | 
+| 項目           | 使用技術               |
+|----------------|----------------------|
+| フロントエンド | HTML, CSS, JavaScript |
+| バックエンド   | Node.js, Express      |
+| データベース   | MySQL                 |
+
 
 
 
