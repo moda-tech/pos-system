@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSシステム</title>
+    <style>
+        /* --- 全体 --- */
+        body {
+            font-family: "Yu Gothic", sans-serif;
+            background-color: #fff0f6;
+            color: #333;
+            margin: 20px;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        /* --- ボタン --- */
+        button {
+            background-color: #ffc1e0;
+            border: none;
+            padding: 8px 16px;
+            margin: 4px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #ffb0d0;
+            transform: translateY(-2px);
+        }
+
+        /* --- 上部戻るボタン --- */
+        .top-button {
+            margin-bottom: 15px;
+        }
+
+        /* --- テーブル --- */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ffc1e0;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffe4f0;
+        }
+
+        tr:hover {
+            background-color: #ffd0e0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 上部戻るボタン -->
+    <a href="p1.html" class="top-button"><button id="submitBtn">戻る</button></a>
+    
+    <h3>売り上げリスト</h3>
+    
+    <!-- 売上テーブル -->
+    <table id="list" border="1">
+        <tr><th>記録</th><th>削除</th></tr>
+    </table>
+    
+    <script src="../js/p5.js"></script>
+</body>
+</html>

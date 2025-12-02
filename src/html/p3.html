@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page3</title>
+    <style>
+        /* --- 全体 --- */
+        body {
+            font-family: "Yu Gothic", sans-serif;
+            background-color: #fff0f6;
+            color: #333;
+            margin: 20px;
+        }
+
+        /* --- ボタン --- */
+        button {
+            background-color: #ffc1e0;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #ffb0d0;
+            transform: translateY(-2px);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* --- 入力フォーム --- */
+        input, select {
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 6px;
+            border: 1px solid #ffc1e0;
+            font-size: 1em;
+            width: 200px;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #ff8fc1;
+            box-shadow: 0 0 5px rgba(255, 193, 224, 0.5);
+        }
+
+        /* --- レイアウト --- */
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* --- 上部ボタン横並び --- */
+        .top-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* --- 確定ボタン --- */
+        .submit-container {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 上部：メイン画面と商品削除画面ボタン -->
+    <div class="top-buttons">
+        <a href="p1.html"><button>メイン画面</button></a>
+        <a href="p4.html"><button>商品削除画面</button></a>
+    </div>
+
+    <!-- 入力フォーム -->
+    <div class="form-container">
+        <input type="text" id="product_name" placeholder="商品名">
+        <select id="category" name="category">
+            <option value="cate1">カスタム</option>
+            <option value="cate2">パフェ</option>
+            <option value="cate3">おかず</option>
+            <option value="cate4">サイド</option>
+        </select>
+        <input type="number" id="product_price" placeholder="金額">
+
+        <!-- 確定ボタン（doBtn） -->
+        <div class="submit-container">
+            <button id="doBtn">確認</button>
+        </div>
+    </div>
+
+    <script src="../js/p3.js"></script>
+</body>
+</html>

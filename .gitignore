@@ -1,0 +1,13 @@
+# Node.js dependencies
+node_modules/
+
+# ビルド成果物
+dist/
+build/
+
+# 環境変数ファイル
+.env
+
+# OSが生成する不要ファイル（Windows）
+Thumbs.db
+.DS_Store
