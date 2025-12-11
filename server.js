@@ -8,15 +8,16 @@ const PORT = 3000;
 app.use(cors());
 app.use(express.json());
 
-// -------------------------------
-// DBプール作成
-// -------------------------------
+
+require("dotenv").config();
+
 const db = await mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "Dousurebaiinnyakore1!",
-    database: "pos_system",
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
 });
+
 
 // -------------------------------
 // 商品一覧取得（表示フラグ付き）
